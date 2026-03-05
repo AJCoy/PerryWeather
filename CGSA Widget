@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Status</title>
+</head>
+
+<body style="margin:0; padding:0;">
+
+<div style="width:100%; border-radius:30px;" id="pwWidget:e4a8b7e7-9ea4-49ff-a65d-6a724be3eefe">
+
+<script src="https://widget.perryweather.com/js/PwIframe.min.js"></script>
+
+<script>
+PwIframe.createPerryWeatherWidget('e4a8b7e7-9ea4-49ff-a65d-6a724be3eefe');
+</script>
+
+</div>
+
+</body>
+</html>
