@@ -2,20 +2,67 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Weather Status</title>
+<title>CGSA Weather Status</title>
+
+<style>
+body{
+    margin:0;
+    padding:20px;
+    font-family: Calibri, Arial, sans-serif;
+    background:#f4f6fb;
+}
+
+.weatherCard{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    padding:20px;
+}
+
+.weatherTitle{
+    text-align:center;
+    font-size:24px;
+    color:#013180;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.weatherSubtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:20px;
+}
+
+#pwWidget\:e4a8b7e7-9ea4-49ff-a65d-6a724be3eefe{
+    width:100%;
+}
+</style>
+
 </head>
 
-<body style="margin:0; padding:0;">
+<body>
 
-<div style="width:100%; border-radius:30px;" id="pwWidget:e4a8b7e7-9ea4-49ff-a65d-6a724be3eefe">
+<div class="weatherCard">
+
+<div class="weatherTitle">
+CGSA Field Weather Status
+</div>
+
+<div class="weatherSubtitle">
+Real-time weather conditions and lightning detection
+</div>
+
+<div id="pwWidget:e4a8b7e7-9ea4-49ff-a65d-6a724be3eefe"></div>
+
+</div>
 
 <script src="https://widget.perryweather.com/js/PwIframe.min.js"></script>
 
 <script>
 PwIframe.createPerryWeatherWidget('e4a8b7e7-9ea4-49ff-a65d-6a724be3eefe');
 </script>
-
-</div>
 
 </body>
 </html>
